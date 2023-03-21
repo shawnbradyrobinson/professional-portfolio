@@ -1,0 +1,38 @@
+/*
+* {
+    font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comofrtaa, Manjari, 
+    'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+}
+*/
+
+.top-panel{
+    display:flex;
+    color:red;
+    font-size:100%;
+}
+
+.about-me{
+    display: flex;
+
+}
+
+.project-panel{
+    display: flex;
+}
+
+.about-me img{
+    
+}
+
+
+
+/*tablet*/
+@media screen and (min-width: 780px){
+
+}
+
+/*desktop*/
+@media screen and (min-width: 1020px){
+
+}
+
