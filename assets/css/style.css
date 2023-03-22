@@ -14,7 +14,7 @@ margin: 0;
 display: flex;
 flex-wrap: wrap;
 margin: 0;
-background-image: url(../images/challenge-2-backdrop.jpg);
+background-image: url(../images/challenge-2-backdrop.jpg); 
 color: white;
 }
 
@@ -24,6 +24,9 @@ justify-content: space-between;
 padding: 60px;
 }
 
+a{
+    color: rgb(157, 254, 189);
+}
 .main-header{
     display: flex;
     flex-wrap: wrap;
@@ -54,47 +57,33 @@ https://tobiasahlin.com/blog/flexbox-break-to-new-row/
 }
 
 /* stock images from unsplash.com */
-.card img{
+.card img{  
+    height: 40%;
+    width: 40%;
+    margin: 0;
+    padding: 0; 
 
 }
 .card header{
     padding: 0px;
 }
 
-.about-me{
-    flex: 1 0 400px;
-    padding: 0px;
-    text-align: center;
-    border-style: solid;
-    border-width: 5px;
-    border-color: lightskyblue;
-    max-height:500px;
+.card ul{
+    display:none;
 }
 
-#about-me{
-
-}
-
-#first-project{
-    background-image: url(./assets/css/images/challenge-2-project-1.jpg);
-}
-
-#second-project{
-
-}
-
-#third-project{
-
-}
-
-#fourth-project{
-
-}
 
 .card:hover{
     border-color:darkblue;
     cursor:pointer;
+    display:block;
 }
+
+.card:hover ul{
+    display:block;
+}
+
+
 
 /*tablet*/
 @media screen and (min-width: 780px){
