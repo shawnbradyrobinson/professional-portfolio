@@ -13,7 +13,9 @@ font-family: Arial;
 margin: 0;
 display: flex;
 flex-wrap: wrap;
-margin-top: 2%
+margin: 0;
+background-image: url(../images/challenge-2-backdrop.jpg);
+color: white;
 }
 
 main{
@@ -47,44 +49,52 @@ https://tobiasahlin.com/blog/flexbox-break-to-new-row/
     text-align: center;
     border-style: solid;
     border-width: 5px;
-    border-color: lightskyblue;
+    border-color: rgb(250, 135, 171);
     max-height:500px;
 }
+
+/* stock images from unsplash.com */
 .card img{
-    object-fit:fill;
-    max-height: 100%
+
 }
 .card header{
     padding: 0px;
 }
 
+.about-me{
+    flex: 1 0 400px;
+    padding: 0px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: lightskyblue;
+    max-height:500px;
+}
 
-.top-panel{
-    display:flex;
-    flex-wrap: flex;
-    margin-left: 0;
-    padding-left: 0;
-    border-left: 0;
-
-    color:white;
-    font-size:75%;
-    background-color: midnightblue;
+#about-me{
 
 }
 
-
-.top-panel ul{
-    flex-wrap: flex;
-    font-size: 110%; 
-    flex-direction: left; 
+#first-project{
+    background-image: url(./assets/css/images/challenge-2-project-1.jpg);
 }
 
-.project-panel{
-    display: flex;
+#second-project{
+
 }
 
+#third-project{
 
+}
 
+#fourth-project{
+
+}
+
+.card:hover{
+    border-color:darkblue;
+    cursor:pointer;
+}
 
 /*tablet*/
 @media screen and (min-width: 780px){
