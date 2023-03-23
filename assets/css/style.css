@@ -77,6 +77,8 @@ https://tobiasahlin.com/blog/flexbox-break-to-new-row/
     border-color:darkblue;
     cursor:pointer;
     display:block;
+    
+
 }
 
 .card:hover ul{
