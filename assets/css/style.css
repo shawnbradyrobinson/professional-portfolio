@@ -4,6 +4,11 @@
     'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
 }
 */
+
+:root{
+    --standardProjectSize: 250px; 
+    --firstProjectSize: calc(2*var(--standardProjectSize));
+}
 *{
     box-sizing: border-box;
 }
@@ -46,8 +51,9 @@ https://tobiasahlin.com/blog/flexbox-break-to-new-row/
     flex-basis: 100%; 
     height: 0; 
 }
+
 .card {
-    flex: 1 0 400px;
+    flex: 1 0 var(--standardProjectSize);
     padding: 0px;
     text-align: center;
     border-style: solid;
@@ -56,7 +62,10 @@ https://tobiasahlin.com/blog/flexbox-break-to-new-row/
     max-height:500px;
 }
 
+
+
 /* stock images from unsplash.com */
+/*STANDARD CARD STYLES*/
 .card img{  
     height: 40%;
     width: 40%;
@@ -72,7 +81,6 @@ https://tobiasahlin.com/blog/flexbox-break-to-new-row/
     display:none;
 }
 
-
 .card:hover{
     border-color:darkblue;
     cursor:pointer;
@@ -85,7 +93,65 @@ https://tobiasahlin.com/blog/flexbox-break-to-new-row/
     display:block;
 }
 
+/*FIRST PROJECT STYLES*/
+.first-project-card {
+    flex: 1 0 var(--firstProjectSize);
+    padding: 0px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(250, 135, 171);
+}
 
+.first-project-card img{  
+    height: 40%;
+    width: 40%;
+    margin: 0;
+    padding: 0; 
+
+}
+.first-project-card header{
+    padding: 0px;
+}
+
+.first-project-card ul{
+    display:none;
+}
+
+.first-project-card:hover{
+    border-color:darkblue;
+    cursor:pointer;
+    display:block;
+    
+
+}
+
+.first-project-card:hover ul{
+    display:block;
+}
+
+.about-me-card {
+    display:flex; 
+    width: 100vw; 
+    flex: 1 0 400px;
+    padding: 0px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(250, 135, 171);
+    max-height:500px;
+}
+
+/*QUESTION FOR CLASS: how do I make images look good inside of cards???*/ 
+.about-me-card img {
+    object-fit: cover; 
+    width: 100%; 
+    margin: 0;
+    padding: 0; 
+
+/*make an ID 100% of the view width and put it in the div for the 'about-me' header
+play with the width, once you get the header proper...
+*/
 
 /*tablet*/
 @media screen and (min-width: 780px){
