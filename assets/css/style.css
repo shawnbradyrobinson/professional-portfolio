@@ -35,7 +35,8 @@ a{
 .main-header{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2%
+    margin-top: 2%; 
+    font-size: 65 px; 
 }
 
 .main-header ul{
@@ -148,6 +149,13 @@ https://tobiasahlin.com/blog/flexbox-break-to-new-row/
     text-align: left; 
 }
  
+.projects-card {
+    display:block; 
+    background-color: rgb(21, 55, 70); 
+    width: 100%; 
+    height: 100%; 
+    font-size: 36px; 
+}
    
 
 /*make an ID 100% of the view width and put it in the div for the 'about-me' header
