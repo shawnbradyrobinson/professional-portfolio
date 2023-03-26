@@ -130,24 +130,25 @@ https://tobiasahlin.com/blog/flexbox-break-to-new-row/
     display:block;
 }
 
+
+
 .about-me-card {
     display:flex; 
-    width: 100vw; 
-    flex: 1 0 400px;
+    flex-wrap: wrap;
     padding: 0px;
     text-align: center;
     border-style: solid;
     border-width: 5px;
+    margin-left: 2%; 
+    margin-right: 2%; 
     border-color: rgb(250, 135, 171);
-    max-height:500px;
 }
 
-/*QUESTION FOR CLASS: how do I make images look good inside of cards???*/ 
-.about-me-card img {
-    object-fit: cover; 
-    width: 100%; 
-    margin: 0;
-    padding: 0; 
+.about-me-card p {
+    text-align: left; 
+}
+ 
+   
 
 /*make an ID 100% of the view width and put it in the div for the 'about-me' header
 play with the width, once you get the header proper...
@@ -160,6 +161,7 @@ play with the width, once you get the header proper...
 
 /*desktop*/
 @media screen and (min-width: 1020px){
+
 
 }
 
