@@ -6,7 +6,7 @@
 */
 
 :root{
-    --standardProjectSize: 250px; 
+    --standardProjectSize: 200px; 
     --firstProjectSize: calc(2*var(--standardProjectSize));
 }
 *{
@@ -165,7 +165,14 @@ https://tobiasahlin.com/blog/flexbox-break-to-new-row/
 
 
 /*tablet*/
+@media screen and (min-width:600px){
+    :root{
+        --standardProjectSize: 500px;
+    } 
+}
+
 @media screen and (min-width: 780px){
+
 
 .contact-me-card{
     font-size: 40px; 
